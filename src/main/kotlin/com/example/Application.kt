@@ -9,6 +9,7 @@ fun main() {
         configureRouting()
         configureMonitoring()
         configureTemplating()
+        configureSerialization()
         loginRoute()
     }.start(wait = true)
 }

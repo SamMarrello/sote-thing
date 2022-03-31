@@ -1,7 +1,9 @@
 package com.example
 
+import kotlinx.serialization.Serializable
 
-data class user(
+@Serializable
+data class User(
     val id: Int,
     val email: String,
     val userName: String,

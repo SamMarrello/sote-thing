@@ -9,22 +9,13 @@ import io.ktor.server.response.*
 import io.ktor.server.request.*
 import io.ktor.util.pipeline.*
 import kotlinx.css.Position
-import kotlinx.html.HtmlContent
-import kotlinx.html.title
+import kotlinx.html.*
 
 fun Application.configureRouting() {
 
     routing {
         get("/") {
             call.respondText("Hello World!")
-        }
-    }
-}
-
-fun Application.loginRoute() {
-    routing {
-        get("/login") {
-
         }
     }
 }
