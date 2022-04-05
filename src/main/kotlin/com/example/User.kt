@@ -1,8 +1,6 @@
 package com.example
 
-import kotlinx.serialization.Serializable
-
-@Serializable
+@kotlinx.serialization.Serializable
 data class User(
     val id: Int,
     val email: String,

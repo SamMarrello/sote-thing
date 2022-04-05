@@ -6,11 +6,12 @@ import com.example.plugins.*
 
 fun main() {
     embeddedServer(Netty, port = 8080, host = "localhost") {
-        configureRouting()
+        index()
         configureMonitoring()
         configureTemplating()
         configureSerialization()
         loginRoute()
+        createUser()
     }.start(wait = true)
 }
 
